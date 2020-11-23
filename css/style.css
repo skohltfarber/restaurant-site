@@ -1,7 +1,3 @@
-img {
-    width: 200px;
-}
-
 body {
     background-color: #CDD7D6;
     font-family: 'Pangolin', cursive;
@@ -53,6 +49,33 @@ label {
     margin-left: 20px;
 }
 
+
+/* Column Layouts */
+
+.col30 {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.col50 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.col70 {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 .logo {
     width: 75px;
 }
@@ -65,7 +88,7 @@ label {
     color: #102542;
 }
 
-ul {
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -81,7 +104,17 @@ ul.thumbnail {
     background-color: #CDD7D6;
 }
 
-li {
+ul.subtotal {
+    display: inline-block;
+    float: none;
+}
+
+li.subtotal {
+    display: inline-block;
+    float: none;
+}
+
+li.menu {
     float: left;
 }
 
@@ -97,32 +130,48 @@ li a:hover {
     background-color: #F87060;
 }
 
-.col50 {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding: 40px;
+
+/* Product Page */
+
+img.hero {
+    width: 98.5%;
 }
 
 .divider {
     border-right: 5px solid #F87060;
 }
 
-img.hero {
-    width: 98.5%;
-}
-
 img.thumbnail {
+    float: left;
     margin-top: .7em;
     margin-right: .7em;
-    width: 9.808em;
+    width: 10.2em;
 }
 
-img:last-child {
+img.thumbnail:last-child {
+    float: left;
     margin-top: .7em;
-    width: 9.8085em;
+    width: 10.5em;
 }
+
+li.thumbnail {
+    float: left;
+    margin-top: .7em;
+    margin-right: .7em;
+}
+
+li.thumbnail:last-child {
+    float: left;
+    margin-top: .7em;
+    width: 10.5em;
+}
+
+img {
+    width: 200px;
+}
+
+
+/* Checkout */
 
 .display_blocks {
     background-color: #fff;
@@ -138,5 +187,36 @@ img:last-child {
 }
 
 .center {
+    text-align: center;
+}
+
+
+/* Shopping Cart */
+
+.cart {
+    width: 100%;
+    background-color: #CDD7D6;
+    border-top: 2px solid #F87060;
+    border-bottom: 2px solid #F87060;
+    padding: 10px;
+}
+
+.cart thead {
+    border-top: 2px solid #F87060;
+}
+
+.cart tbody {
+    text-align: center;
+}
+
+.order-summary {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.order-summary .call-to-action {
+    width: 90%;
+    display: inline-block;
     text-align: center;
 }
